@@ -1,0 +1,26 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "my server ever",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "body-parser": "^1.13.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aisholpan/My-cosmetics.git"
+  },
+  "author": "Aisholpan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aisholpan/My-cosmetics/issues"
+  },
+  "homepage": "https://github.com/Aisholpan/My-cosmetics/#readme"
+}
