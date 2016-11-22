@@ -16,10 +16,14 @@ app.get('/', function(req, res){
 
 app.get('/cosmetic', function(req, res){
 		var summa = 0;
+		var sum=0;
 
 	for(var i=0; i<cosmetic.length; i++)
-		summa += cosmetic[i].price*cosmetic[i].discount;
-	res.send(JSON.stringify(cosmetic,null,4)+"\n Общая сумма заказа: "+summa);
+	{
+		sum =cosmetic[i].price-cosmetic[i].price*cosmetic[i].discount;
+		summa+=sum;
+	}
+	res.send(JSON.stringify(cosmetic,null,4)+"\n Общая сумма заказа с учетом скидок: "+summa);
 });
 
 
